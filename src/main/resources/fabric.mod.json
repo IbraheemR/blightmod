@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "blight",
+  "version": "${version}",
+
+  "name": "Blight Mod",
+  "description": "Blight consumes mycelium, Grass consumes blight. Rock Paper Scissors.",
+  "authors": [
+    "Ibraheem Rordrigues"
+  ],
+  "contact": {
+    "homepage": "https://blight.ibraheemrodrigues.com",
+    "sources": "https://github.com/IbraheemR/blightmod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/blight/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.ibraheemrodrigues.blight.BlightMod"
+    ]
+  },
+  "mixins": [
+    "blight.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
